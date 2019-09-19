@@ -1,6 +1,6 @@
 <?php
 
-namespace Ronaldroyce\Dynamicmenu;
+namespace ruhruhroy\dynamicmenu;
 
 use App\Http\Controllers\Controller;
 use App\Models\MenuItem;

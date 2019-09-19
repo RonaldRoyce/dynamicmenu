@@ -1,6 +1,6 @@
 <?php
 
-namespace Ronaldroyce\Dynamicmenu;
+namespace ruhruhroy\dynamicmenu;
 
 use Illuminate\Http\Request;
 use App\Helpers\MenuHelper;

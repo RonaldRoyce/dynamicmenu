@@ -1,17 +1,17 @@
 <?php
 
 Route::group(['middleware' => ['web', 'auth']], function () {
-    Route::get('/menus', ['as' => 'menu.index', 'uses' => 'Ronaldroyce\Dynamicmenu\MenuController@index']);
-    Route::get('/menuitems', ['as' => 'menuitem.index', 'uses' => 'Ronaldroyce\Dynamicmenu\MenuItemController@index']);
+    Route::get('/menus', ['as' => 'menu.index', 'uses' => 'ruhruhroy\dynamicmenu\MenuController@index']);
+    Route::get('/menuitems', ['as' => 'menuitem.index', 'uses' => 'ruhruhroy\dynamicmenu\MenuItemController@index']);
 });
 
 Route::group(['middleware' => ['auth:api', 'api']], function () {
-    Route::get('/menuitem/save', 'Ronaldroyce\Dynamicmenu\MenuItemApiController@saveMenuItem')->name('menuitemsave');
-    Route::get('/menuitem/add', 'Ronaldroyce\Dynamicmenu\MenuItemApiController@createMenuItem')->name('menuitemadd');
-    Route::get('/menuitem/delete', 'Ronaldroyce\Dynamicmenu\MenuItemApiController@deleteMenuItem')->name('menuitemdelete');
-    Route::get('/menuitem/movedown', 'Ronaldroyce\Dynamicmenu\MenuItemApiController@movedown')->name('movedown');
-    Route::get('/menuitem/moveup', 'Ronaldroyce\Dynamicmenu\MenuItemApiController@moveup')->name('moveup');
+    Route::get('/menuitem/save', 'ruhruhroy\dynamicmenu\MenuItemApiController@saveMenuItem')->name('menuitemsave');
+    Route::get('/menuitem/add', 'ruhruhroy\dynamicmenu\MenuItemApiController@createMenuItem')->name('menuitemadd');
+    Route::get('/menuitem/delete', 'ruhruhroy\dynamicmenu\MenuItemApiController@deleteMenuItem')->name('menuitemdelete');
+    Route::get('/menuitem/movedown', 'ruhruhroy\dynamicmenu\MenuItemApiController@movedown')->name('movedown');
+    Route::get('/menuitem/moveup', 'ruhruhroy\dynamicmenu\MenuItemApiController@moveup')->name('moveup');
 });
 
 
-Route::middleware('auth:api')->get('/menu/add', 'Ronaldroyce\Dynamicmenu\MenuApiController@createMenu')->name('menuadd');
+Route::middleware('auth:api')->get('/menu/add', 'ruhruhroy\dynamicmenu\MenuApiController@createMenu')->name('menuadd');

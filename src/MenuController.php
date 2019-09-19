@@ -1,10 +1,10 @@
 <?php
 
-namespace Ronaldroyce\Dynamicmenu;
+namespace ruhruhroy\dynamicmenu;
 
 use Illuminate\Http\Request;
 use App\Helpers\MenuHelper;
-use Ronaldroyce\Dynamicmenu\Menu;
+use ruhruhroy\dynamicmenu\Menu;
 use App\Http\Controllers\Controller;
 
 class MenuController extends Controller

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ronaldroyce\Dynamicmenu;
+namespace ruhruhroy\dynamicmenu;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
@@ -14,8 +14,8 @@ class MenuServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Ronaldroyce\Dynamicmenu\MenuController');
-        $this->app->make('Ronaldroyce\Dynamicmenu\MenuItemController');
+        $this->app->make('ruhruhroy\dynamicmenu\MenuController');
+        $this->app->make('ruhruhroy\dynamicmenu\MenuItemController');
 
         $this->loadViewsFrom(__DIR__.'/views', 'dynamicmenu');
 
@@ -33,7 +33,7 @@ class MenuServiceProvider extends ServiceProvider
     {
         Route::prefix('api')
      ->middleware('api')
-     // ->namespace('Ronaldroyce/Dynamicmenu')
+     // ->namespace('ruhruhroy/dynamicmenu')
      ->group(__DIR__ . '/api.php');
 
         include __DIR__.'/routes.php';
