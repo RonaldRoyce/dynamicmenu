@@ -1,0 +1,21 @@
+{
+     "name": "Ronaldroyce/Dynamicmenu",
+     "description": "Maintain menu",
+     "authors": [
+          {
+               "name": "Ronald Royce",
+               "email": "ruhruhroy@gmail.com"
+          }
+     ],
+     "minimum-stability": "dev",
+     "autoload": {
+          "classmap": [],
+          "psr-4": {
+               "App\\": "app/",
+               "Ronaldroyce\\Dynamicmenu\\": "packages/ronaldroyce/dynamicmenu/src/"
+          }
+     },
+     "require": {
+          "laravel/passport": "^7.4"
+     }
+}
