@@ -17,5 +17,6 @@
      },
      "require": {
           "laravel/passport": "^7.4"
-     }
+     },
+     "license": "MIT"
 }
