@@ -14,8 +14,8 @@ class MenuServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make(__DIR__ . "/MenuController");
-        $this->app->make(__DIR__ . "/MenuItemController");
+        $this->app->make('Ruhruhroy\Dynamicmenu\MenuController');
+        $this->app->make('Ruhruhroy\Dynamicmenu\MenuItemController');
 
         $this->loadViewsFrom(__DIR__.'/views', 'dynamicmenu');
 
