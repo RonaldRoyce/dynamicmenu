@@ -39,11 +39,11 @@ class MenuServiceProvider extends ServiceProvider
         include __DIR__.'/routes.php';
 
         $this->publishes([
-          __DIR__.'/views' => base_path('resources/views/ronaldroyce/dynamicmenu'),
+          __DIR__.'/views' => base_path('resources/views/ruhruhroy/dynamicmenu'),
       ]);
 
         $this->publishes([
-          __DIR__.'/public' => public_path('vendor/ronaldroyce/dynamicmenu'),
+          __DIR__.'/public' => public_path('vendor/ruhruhroy/dynamicmenu'),
       ], 'public');
     }
 }
