@@ -1,10 +1,10 @@
 <?php
 
-namespace ruhruhroy\dynamicmenu;
+namespace Ruhruhroy\Dynamicmenu;
 
 use Illuminate\Http\Request;
 use App\Helpers\MenuHelper;
-use ruhruhroy\dynamicmenu\Menu;
+use Ruhruhroy\Dynamicmenu\Menu;
 use App\Http\Controllers\Controller;
 
 class MenuController extends Controller
@@ -17,6 +17,6 @@ class MenuController extends Controller
     {
         $menus = Menu::orderBy('name')->get();
 
-        return view('ronaldroyce.dynamicmenu.menu.menu.index', array('menus' => $menus));
+        return view('ruhruhroy.dynamicmenu.menu.menu.index', array('menus' => $menus));
     }
 }

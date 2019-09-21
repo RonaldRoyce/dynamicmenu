@@ -1,5 +1,5 @@
 <?php
-namespace ruhruhroy\dynamicmenu;
+namespace Ruhruhroy\Dynamicmenu;
 
 use Illuminate\Database\Eloquent\Model;
 

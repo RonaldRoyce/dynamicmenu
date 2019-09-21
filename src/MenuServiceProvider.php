@@ -1,6 +1,6 @@
 <?php
 
-namespace ruhruhroy\dynamicmenu;
+namespace Ruhruhroy\Dynamicmenu;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
@@ -14,8 +14,8 @@ class MenuServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('ruhruhroy\dynamicmenu\MenuController');
-        $this->app->make('ruhruhroy\dynamicmenu\MenuItemController');
+        $this->app->make(__DIR__ . "/MenuController");
+        $this->app->make(__DIR__ . "/MenuItemController");
 
         $this->loadViewsFrom(__DIR__.'/views', 'dynamicmenu');
 

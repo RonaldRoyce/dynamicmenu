@@ -1,11 +1,11 @@
 <?php
 
-namespace ruhruhroy\dynamicmenu;
+namespace Ruhruhroy\Dynamicmenu;
 
 use Illuminate\Http\Request;
 use App\Helpers\MenuHelper;
-use ronaldroyce\dynamicmenu\Menu;
-use ronaldroyce\dynamicmenu\MenuItem;
+use Ruhruhroy\Dynamicmenu\Menu;
+use Ruhruhroy\Dynamicmenu\MenuItem;
 use App\Http\Controllers\Controller;
 
 class MenuItemController extends Controller

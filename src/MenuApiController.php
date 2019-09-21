@@ -1,6 +1,6 @@
 <?php
 
-namespace ruhruhroy\dynamicmenu;
+namespace Ruhruhroy\Dynamicmenu;
 
 use App\Http\Controllers\Controller;
 use App\Models\Menu;

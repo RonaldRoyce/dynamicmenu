@@ -1,5 +1,5 @@
 <?php
-namespace ruhruhroy\dynamicmenu;
+namespace Ruhruhroy\Dynamicmenu;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -15,6 +15,6 @@ class Menu extends Model
 
     public function menuItems()
     {
-        return $this->hasMany('App\Models\MenuItem', 'menu_id', 'menu_id');
+        return $this->hasMany('Ruhruhroy\Dynamicmenu\MenuItem', 'menu_id', 'menu_id');
     }
 }
